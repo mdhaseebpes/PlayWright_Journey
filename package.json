@@ -11,7 +11,8 @@
     "webTests": "npm run clean:allure && npx playwright test --grep @Web && npm run report",
     "APITests": "npm run clean:allure && npx playwright test --grep @API --reporter=line,allure-playwright && npm run report",
     "safari": "npx playwright test --config playwright.config1.js --project=webkit",
-    "chrome": "npx playwright test --config playwright.config1.js --project=chrome"
+    "chrome": "npx playwright test --config playwright.config1.js --project=chrome",
+    "cucumberRegression": "npx cucumber-js --tags '@regression' --retry 1  --exit --format html:cucumber-report.html"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "allure-playwright": "^3.2.2"
   },
   "dependencies": {
+    "@cucumber/cucumber": "^11.3.0",
     "exceljs": "^4.4.0"
   }
 }

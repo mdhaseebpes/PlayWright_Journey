@@ -1,1 +1,15 @@
-{}
+{
+  "cucumberautocomplete.steps": ["features/step_definition/*.js"],
+  "cucumberautocomplete.syncfeatures": "features/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.strictGherkinValidation": true,
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.snippetsKeywords": [
+    "Given",
+    "When",
+    "Then",
+    "And",
+    "But"
+  ],
+  "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then|And)"
+}
