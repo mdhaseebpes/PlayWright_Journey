@@ -2,13 +2,13 @@ Feature: Ecommerce validations
 
 #note : In cucumber u cannot run feature file in parallel but scenario can be executed parallel
 
-@negative
+@negative @regressioncucumber
 Scenario: Verify the error in application
    Given login to ecommerce2 application with "wrongUsername" and "learning@"
    Then Verify Error message is displayed
 
 
-@multiValidation
+@multiValidation @regressioncucumber
 Scenario Outline: Verify the error in application
    Given login to ecommerce2 application with "<username>" and "<password>"
    Then Verify Error message is displayed

@@ -1,5 +1,5 @@
 // @ts-check
-const { defineConfig, devices, chromium } = require('@playwright/test');
+const { devices, chromium } = require('@playwright/test');
 
 /**
  * Read environment variables from file.
@@ -10,7 +10,7 @@ const { defineConfig, devices, chromium } = require('@playwright/test');
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
-module.exports = defineConfig({
+const config = {
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -109,4 +109,4 @@ module.exports = defineConfig({
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
-});
+};

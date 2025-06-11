@@ -20,7 +20,7 @@ test('Playwright special locators', async ({ page }) => {
     .click();
 });
 
-test.only('Client App login', async ({ page }) => {
+test('Client App login', async ({ page }) => {
   const email = 'mdxxxxxxx@gmail.com';
   const products = page.locator('.card-body');
 
